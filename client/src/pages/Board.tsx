@@ -28,7 +28,7 @@ const Board = () => {
       setTickets(data);
     } catch (err) {
       console.error('Failed to retrieve tickets:', err);
-      window.location.assign('/login')
+      auth.logout()
     }
   };
 
